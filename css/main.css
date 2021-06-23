@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+  font-family: "Karma", serif;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 2rem;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+}
+
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  color: #6f00e7;
+}
+/** grid **/
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+main > figure {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #987ffa;
+  border-radius: 6px;
+  margin: 0;
+}
+
+figcaption p, .img, h1, div {
+  flex-grow: 1;
+}
+
+div {
+  display: flex;
+}
+
+div figure {
+  display: flex;
+  background-color: #6f00e7;
+  border-radius: 3em;
+  font-size: 1rem;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+}
